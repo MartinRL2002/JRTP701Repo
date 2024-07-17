@@ -1,0 +1,27 @@
+server:
+  port: 4040
+spring:
+  application:
+    name: JRTP-Project02-MiniProjectOnLogging
+  datasource:
+    dbcp2:
+      driver-class-name: org.h2.Driver
+    password: martin
+    url: jdbc:h2:mem:testdb
+    username: martin
+  jpa:
+    show-sql: true
+    
+   
+details:
+  module:
+    messages:
+      save-success: Movie details is saved with Id value
+      save-failure: Movie details is not saved with value
+      findById-failure: Movie details is not found
+      update-success: Movie details is updated successfully
+      update-failure: Movie details is not found for updation
+      delete-success: Movie details is deleted successfully
+      delete-failure: Movie deetails is not found for deletion
+      status-change-success: Movie status is changed successfully
+      status-change-failure: Movie is not found for status change 
